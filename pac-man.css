@@ -1,0 +1,224 @@
+* { box-sizing: border-box; }
+body{
+  background-color: black;
+}
+
+.score{
+  display: inline-block;
+  width: 20%;
+  margin: auto 2% auto 5%;
+  vertical-align: middle;
+  /*border: 1px solid yellow;*/
+}
+
+  .score ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+
+    .score ul li{
+      margin: 10px;
+      font-size: 250%;
+    }
+
+    .score ul li:first-of-type{
+      background-color: white;
+      color: black;
+      width: 50%;
+      margin: auto;
+    }
+.extra {
+  width: 69.5%;
+  padding: 3px;
+  padding-left: 200px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid yellow;
+}
+.game-board{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.row{
+  height: 13px;
+  margin: auto;
+  /*position: relative;*/
+}
+
+.row div{
+  height: 13px;
+  width: 13px;
+  display: inline-block;
+  position: relative;
+}
+
+.vert{
+  /*background-image: url('./images/V.png');
+  background-size: cover;*/
+  border-left: 1px solid #0000FF;
+  border-right: 1px solid #0000FF;
+}
+
+.horz{
+  /*background-image: url('./images/H.png');
+  background-size: cover;*/
+  border-top: 1px solid #0000FF;
+  border-bottom: 1px solid #0000FF;
+
+}
+/* wall ends */
+.tup{
+  /*background-image: url('./images/TU.png');
+  background-size: cover;*/
+  /*border-left: 1px solid #0000FF;
+  border-right: 1px solid #0000FF;*/
+  border-top: 1px solid #0000FF;
+  /*border-radius: 5px;*/
+}
+.tdn{
+  /*background-image: url('./images/TD.png');
+  background-size: cover;*/
+  border-bottom: 1px solid #0000FF;
+}
+.tlf{
+  /*background-image: url('./images/TL.png');
+  background-size: cover;*/
+  border-left: 1px solid #0000FF;
+}
+.trt{
+  /*background-image: url('./images/TR.png');
+  background-size: cover;*/
+  border-right: 1px solid #0000FF;
+}
+/* wall T intersections */
+.top{
+  /*background-image: url('./images/T.png');
+  background-size: cover;*/
+  border-left: 1px solid #0000FF;
+  border-right: 1px solid #0000FF;
+  border-top: 1px solid #0000FF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.bot{
+  /*background-image: url('./images/B.png');
+  background-size: cover;*/
+  border-left: 1px solid #0000FF;
+  border-right: 1px solid #0000FF;
+  border-bottom: 1px solid #0000FF;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.lft{
+  /*background-image: url('./images/L.png');
+  background-size: cover;*/
+  border-left: 1px solid #0000FF;
+  border-bottom: 1px solid #0000FF;
+  border-top: 1px solid #0000FF;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  }
+.rgt{
+  /*background-image: url('./images/R.png');
+  background-size: cover;*/
+  border-right: 1px solid #0000FF;
+  border-bottom: 1px solid #0000FF;
+  border-top: 1px solid #0000FF;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* outside corners on walls */
+.tlc{
+  /*background-image: url('./images/TLC.png');
+  background-size: cover;*/
+  border-left: 1px solid #0000FF;
+  border-top: 1px solid #0000FF;
+  border-top-left-radius: 5px;
+}
+
+.trc{
+  /*background-image: url('./images/TRC.png');
+  background-size: cover;*/
+  border-right: 1px solid #0000FF;
+  border-top: 1px solid #0000FF;
+  border-top-right-radius: 5px;
+}
+
+.brc{
+  /*background-image: url('./images/BRC.png');
+  background-size: cover;*/
+  border-right: 1px solid #0000FF;
+  border-bottom: 1px solid #0000FF;
+  border-bottom-right-radius: 5px;
+}
+
+.blc{
+  /*background-image: url('./images/BLC.png');
+  background-size: cover;*/
+  border-left: 1px solid #0000FF;
+  border-bottom: 1px solid #0000FF;
+  border-bottom-left-radius: 5px;
+}
+
+.coin{
+  background-image: url('./images/littleDot.png');
+  background-size: cover;
+
+}
+.char img {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+/* Pacman GIF rotated using http://gifgifs.com/rotate/ */
+.pacman {
+  background-image: url('./images/pacman.gif');
+  background-size: cover;
+  /*background-size: 300%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 13px;
+  left: 13px;*/
+  /*z-index: 999;*/
+
+}
+.pacman-l{
+  background-image: url('./images/pacman.gif');
+  background-size: cover;
+}
+
+.pacman-u{
+  background-image: url('./images/pacman.gif');
+  background-size: cover;
+}
+
+.pacman-r{
+  background-image: url('./images/pacman.gif');
+  background-size: cover;
+}
+
+.pacman-d{
+  background-image: url('./images/pacman.gif');
+  background-size: cover;
+}
+
+.dead{
+  background-image: url('../img/explode3.gif');
+  background-size: cover;
+}
+.blinkDot{
+  background-image: url('./images/largeDot.gif');
+  background-size: cover;
+}
+.ghost{
+  background-image: url('./images/inky_ghost2.gif');
+  background-size: cover;
+}
+
+.empty{
+}
